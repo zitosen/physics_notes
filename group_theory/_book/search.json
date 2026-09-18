@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "群论在物理学中的应用",
+    "section": "",
+    "text": "1 关于本讲义\n本讲义面向物理学及相关专业的本科高年级学生和研究生， 希望从物理问题和对称性出发，逐步建立群论的基本概念， 并理解其在物理学中的应用。\n本讲义采用“物理问题 → 对称性 → 数学结构 → 物理应用”的思路， 强调数学结构与物理直觉之间的联系。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>群论在物理学中的应用</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#内容结构",
+    "href": "index.html#内容结构",
+    "title": "群论在物理学中的应用",
+    "section": "1.1 内容结构",
+    "text": "1.1 内容结构\n本讲义目前包括：\n\n群的基本概念\n群表示\n不可约表示与特征标\n点群与晶体对称性\n群论在量子力学中的应用\n\n讲义将随着课程教学、科研工作和学习过程持续更新。",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>群论在物理学中的应用</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#living-lecture-notes",
+    "href": "index.html#living-lecture-notes",
+    "title": "群论在物理学中的应用",
+    "section": "1.2 Living Lecture Notes",
+    "text": "1.2 Living Lecture Notes\n这是一个持续演化的讲义项目。\n在线版本反映当前内容； 重要版本将以固定版本的 PDF 等形式保存。\n\n作者：申志涛",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>群论在物理学中的应用</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-introduction.html",
+    "href": "chapters/01-introduction.html",
+    "title": "2  为什么物理学需要群论？",
+    "section": "",
+    "text": "2.1 从对称性到群\n物理学中存在大量对称性。\n例如空间平移、时间平移、旋转、镜像以及晶体对称性。 这些看似不同的对称性，可以用统一的数学语言描述。\n群论正是研究这种变换及其组合规律的数学工具。\n我们首先关心的是一组变换如何进行组合。\n如果这些变换满足一定的代数结构， 它们就构成一个群。\n因此可以建立：\n对称性 → 变换 → 组合规律 → 群\n进一步，我们需要研究这些抽象的群如何作用于物理对象。\n这就引出了群表示理论。",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>为什么物理学需要群论？</span>"
+    ]
+  }
+]
