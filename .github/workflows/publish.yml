@@ -22,12 +22,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render Quarto Book
-        run: quarto render group-theory
+        run: quarto render group_theory
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: group-theory/_book
+          path: group_theory/_book
 
   deploy:
     needs: build
