@@ -1,5 +1,6 @@
 # Quarto
 .quarto/
+_book/
 _site/
 
 # OS
@@ -16,3 +17,6 @@ __pycache__/
 # Temporary files
 *.tmp
 *.log
+
+/.quarto/
+**/*.quarto_ipynb
