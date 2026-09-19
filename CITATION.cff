@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "Physics Notes"
+message: "如果使用本项目的讲义内容，请引用本项目，并尽可能注明所使用的具体版本。"
+type: book
+
+authors:
+
+* family-names: "Shen"
+  given-names: "Zhitao"
+
+version: "0.1.0"
+date-released: "2026-09-19"
+
+repository-code: "https://github.com/zitosen/physics_notes"
+url: "https://zitosen.github.io/physics_notes/"
+
+license: "CC-BY-NC-4.0"
+
+abstract: "一个持续更新的物理学讲义与知识平台，旨在通过版本控制和在线发布建立可持续维护的物理学学习资料。"
+
+keywords:
+
+* 物理学
+* 讲义
+* 群论
+* 数学物理
+* 对称性
