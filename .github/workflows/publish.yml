@@ -1,4 +1,4 @@
-name: Publish Quarto Book
+name: Publish Physics Notes
 
 on:
   push:
@@ -21,17 +21,27 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render Quarto Book
+      - name: Render root site
+        run: quarto render
+
+      - name: Render group theory book
         run: quarto render group_theory
+
+      - name: Assemble group theory into root site
+        shell: bash
+        run: |
+          mkdir -p _site/group_theory
+          cp -R group_theory/_book/. _site/group_theory/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: group_theory/_book
+          path: _site
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

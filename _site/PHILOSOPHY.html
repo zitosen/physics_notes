@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="申志涛">
 
-<title>群论在物理学中的应用</title>
+<title>philosophy – Physics Notes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -37,7 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapters/01-introduction.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -47,13 +45,13 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c574c73dd0d0ff61020859ffc61752ee.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d0cfe7a3482e0d49a74229a8f3b76718.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -79,130 +77,122 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">群论在物理学中的应用</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Physics Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">首页</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./group_theory/index.html"> 
+<span class="menu-text">群论</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">群论在物理学中的应用</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">群论在物理学中的应用</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/01-introduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">为什么物理学需要群论？</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./chapters/02-group.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">02-group.html</span></span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#关于本讲义" id="toc-关于本讲义" class="nav-link active" data-scroll-target="#关于本讲义"><span class="header-section-number">1</span> 关于本讲义</a>
+  <li><a href="#living-physics-notes-内容理念" id="toc-living-physics-notes-内容理念" class="nav-link active" data-scroll-target="#living-physics-notes-内容理念">Living Physics Notes 内容理念</a>
   <ul class="collapse">
-  <li><a href="#内容结构" id="toc-内容结构" class="nav-link" data-scroll-target="#内容结构"><span class="header-section-number">1.1</span> 内容结构</a></li>
-  <li><a href="#living-lecture-notes" id="toc-living-lecture-notes" class="nav-link" data-scroll-target="#living-lecture-notes"><span class="header-section-number">1.2</span> Living Lecture Notes</a></li>
+  <li><a href="#简洁" id="toc-简洁" class="nav-link" data-scroll-target="#简洁">1. 简洁</a></li>
+  <li><a href="#结构" id="toc-结构" class="nav-link" data-scroll-target="#结构">2. 结构</a></li>
+  <li><a href="#物理图像" id="toc-物理图像" class="nav-link" data-scroll-target="#物理图像">3. 物理图像</a></li>
+  <li><a href="#从物理问题出发" id="toc-从物理问题出发" class="nav-link" data-scroll-target="#从物理问题出发">4. 从物理问题出发</a></li>
+  <li><a href="#分层呈现" id="toc-分层呈现" class="nav-link" data-scroll-target="#分层呈现">5. 分层呈现</a></li>
+  <li><a href="#建立世界图像" id="toc-建立世界图像" class="nav-link" data-scroll-target="#建立世界图像">6. 建立世界图像</a></li>
+  <li><a href="#持续演化" id="toc-持续演化" class="nav-link" data-scroll-target="#持续演化">7. 持续演化</a></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">群论在物理学中的应用</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>申志涛 </p>
-          </div>
-  </div>
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="关于本讲义" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> 关于本讲义</h1>
-<p>本讲义面向物理学及相关专业的本科高年级学生和研究生， 希望从物理问题和对称性出发，逐步建立群论的基本概念， 并理解其在物理学中的应用。</p>
-<p>本讲义采用“物理问题 → 对称性 → 数学结构 → 物理应用”的思路， 强调数学结构与物理直觉之间的联系。</p>
-<section id="内容结构" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="内容结构"><span class="header-section-number">1.1</span> 内容结构</h2>
-<p>本讲义目前包括：</p>
-<ul>
-<li>群的基本概念</li>
-<li>群表示</li>
-<li>不可约表示与特征标</li>
-<li>点群与晶体对称性</li>
-<li>群论在量子力学中的应用</li>
-</ul>
-<p>讲义将随着课程教学、科研工作和学习过程持续更新。</p>
+<section id="living-physics-notes-内容理念" class="level1">
+<h1>Living Physics Notes 内容理念</h1>
+<p>Living Physics Notes 不是一本试图覆盖所有知识的传统教材，而是一套持续演化的物理知识体系。</p>
+<section id="简洁" class="level2">
+<h2 class="anchored" data-anchor-id="简洁">1. 简洁</h2>
+<p>用尽可能少的文字，把概念、原理和逻辑说清楚。</p>
+<p>不追求文字数量，而追求信息密度。对于已经明确的内容不重复解释，对于可以由公式直接表达的内容不使用冗长文字。</p>
+<p><strong>少讲，但讲清楚。</strong></p>
+<hr>
 </section>
-<section id="living-lecture-notes" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="living-lecture-notes"><span class="header-section-number">1.2</span> Living Lecture Notes</h2>
-<p>这是一个持续演化的讲义项目。</p>
-<p>在线版本反映当前内容； 重要版本将以固定版本的 PDF 等形式保存。</p>
+<section id="结构" class="level2">
+<h2 class="anchored" data-anchor-id="结构">2. 结构</h2>
+<p>重视理论的整体框架、知识结构以及概念之间的逻辑关系。</p>
+<p>学习一个理论，不只是知道它包含哪些公式和结论，更重要的是理解：</p>
+<p><strong>它为什么出现、解决什么问题、由什么构成、如何发展，以及它与其他理论如何联系。</strong></p>
+<p><strong>不是知识点的集合，而是理论结构。</strong></p>
 <hr>
+</section>
+<section id="物理图像" class="level2">
+<h2 class="anchored" data-anchor-id="物理图像">3. 物理图像</h2>
+<p>数学公式是物理理论的重要语言，但不是理论本身。</p>
+<p>每一个重要概念和公式，都应尽可能建立相应的物理图像，使数学结构能够对应到可理解的物理对象、过程和关系。</p>
+<p><strong>公式不仅要会推导，更要知道它在描述什么。</strong></p>
 <hr>
-<p><strong>版权声明</strong></p>
-<p>© 2026 申志涛（Zhitao Shen）</p>
-<p>除非另有明确说明，本讲义中的原创内容采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> 许可协议。</p>
-<p>第三方材料，包括图片、引文、数据等，不当然适用上述许可协议， 其版权及使用权限遵循各自的许可或版权条款。</p>
+</section>
+<section id="从物理问题出发" class="level2">
+<h2 class="anchored" data-anchor-id="从物理问题出发">4. 从物理问题出发</h2>
+<p>物理理论不是人为堆积起来的公式，而是人类为理解自然现象而建立的概念和数学结构。</p>
+<p>因此内容尽可能遵循：</p>
+<p><strong>物理问题 → 核心概念 → 数学结构 → 物理图像 → 理论应用</strong></p>
+<hr>
+</section>
+<section id="分层呈现" class="level2">
+<h2 class="anchored" data-anchor-id="分层呈现">5. 分层呈现</h2>
+<p>完整性不应以牺牲主线的清晰度为代价。</p>
+<p>讲义采用分层的信息结构：</p>
+<p><strong>核心内容 → 详细推导 → 补充说明 → 深入材料</strong></p>
+<p>其中核心内容构成理论的最小充分框架，读者只阅读主线即可理解本章的基本逻辑。</p>
+<p>详细推导、数学细节、历史背景、拓展讨论和参考资料等内容可以按需展开或跳过。</p>
+<p><strong>主线始终清晰，细节按需展开。</strong></p>
+<p>网页不是简单地把纸质教材搬到屏幕上，而应利用数字媒介实现不同层次知识的动态呈现。</p>
+<hr>
+</section>
+<section id="建立世界图像" class="level2">
+<h2 class="anchored" data-anchor-id="建立世界图像">6. 建立世界图像</h2>
+<p>物理学习的最终目的不仅是掌握知识和解决习题，而是逐渐形成对自然世界的结构化认识。</p>
+<p>不同理论应当相互连接，使学习者能够逐渐理解：</p>
+<p><strong>物质、运动、相互作用、对称性、量子态、集体行为以及宏观现象之间的关系。</strong></p>
+<p>最终形成的不是一张知识清单，而是一幅不断完善的物理世界图像。</p>
+<hr>
+</section>
+<section id="持续演化" class="level2">
+<h2 class="anchored" data-anchor-id="持续演化">7. 持续演化</h2>
+<p>Living Physics Notes 不追求一次完成。</p>
+<p>内容可以被修改、重组、删除和扩展。重要版本通过版本控制保存，使知识体系能够在长期教学、研究和学习过程中持续演化。</p>
+<p><strong>不是写完一本书，而是不断构建一套更清晰的物理知识体系。</strong></p>
 
 
 </section>
@@ -609,15 +599,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./chapters/01-introduction.html" class="pagination-link" aria-label="为什么物理学需要群论？">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">为什么物理学需要群论？</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 
